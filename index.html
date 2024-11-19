@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join us in celebrating our special day">
+    <title>Lahari & Arnav's Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#registry">Registry</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Lahari & Arnav</h1>
+                <p class="date">June 7, 2025</p>
+                <p class="location">Somewhere in New Jersey</p>
+            </div>
+        </section>
+
+        <section id="story" class="our-story">
+            <h2>Our Story</h2>
+            <div class="story-content">
+                <p>We met in New York City</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>First Date</h3>
+                        <p>Dinner at Veselka</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>The Proposal</h3>
+                        <p>On the Brooklyn Bridge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="event-details">
+            <h2>Event Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Ceremony</h3>
+                    <p>10:00 AM</p>
+                    <p>The Mandap</p>
+                    <p>Somewhere in</p>
+                    <p>Edison, NJ 31415</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Reception</h3>
+                    <p>5:00 PM - 11:00 PM</p>
+                    <p>TBD</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Accommodations</h3>
+                    <p>TBD</p>
+                    <p>Special room block rate available if Arnav gets his act together.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        <section id="registry" class="registry">
+            <h2>Registry</h2>
+            <div class="registry-links">
+                <a href="#" class="registry-button">Amazon</a>
+                <a href="#" class="registry-button">Crate & Barrel</a>
+                <a href="#" class="registry-button">Target</a>
+            </div>
+        </section>
+        -->
+
+        <section id="rsvp" class="rsvp">
+            <h2>RSVP</h2>
+            <form class="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="attending">Will you be attending?</label>
+                    <select id="attending" required>
+                        <option value="">Please select...</option>
+                        <option value="yes">Joyfully Accept</option>
+                        <option value="no">Regretfully Decline</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" min="1" max="4">
+                </div>
+                <button type="submit" class="submit-button">Send RSVP</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Lahari &amp; Arnav's Event</p>
+        <p>Website created with ❤️< and 🤖 (Claude AI)</p>
+    </footer>
+</body>
+</html>
