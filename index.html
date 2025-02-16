@@ -3,114 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join us in celebrating our special day">
-    <title>Lahari & Arnav's Event</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lahari // Arnav</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-css/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', 'Times New Roman', serif;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 2px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            max-width: 90%;
+            width: 400px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .link {
+            display: inline-block;
+            font-size: 1.5rem;
+            color: #333333;
+            background-color: rgb(174, 190, 148);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 2px;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .link:hover {
+            background-color: rgb(154, 170, 128);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .password {
+            font-size: 1.2rem;
+            color: #666;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.5px;
+        }
+
+        .password.italic {
+            font-style: italic;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 2rem;
+            }
+            
+            .link {
+                font-size: 1.2rem;
+                padding: 0.8rem 1.5rem;
+            }
+
+            .password {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="site-header">
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#details">Details</a></li>
-                <li><a href="#registry">Registry</a></li>
-                <li><a href="#rsvp">RSVP</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Lahari & Arnav</h1>
-                <p class="date">June 7, 2025</p>
-                <p class="location">Somewhere in New Jersey</p>
-            </div>
-        </section>
-
-        <section id="story" class="our-story">
-            <h2>Our Story</h2>
-            <div class="story-content">
-                <p>We met in New York City</p>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>First Date</h3>
-                        <p>Dinner at Veselka</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>The Proposal</h3>
-                        <p>On the Brooklyn Bridge</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="details" class="event-details">
-            <h2>Event Details</h2>
-            <div class="details-grid">
-                <div class="detail-card">
-                    <h3>Ceremony</h3>
-                    <p>10:00 AM</p>
-                    <p>The Mandap</p>
-                    <p>Somewhere in</p>
-                    <p>Edison, NJ 31415</p>
-                </div>
-                <div class="detail-card">
-                    <h3>Reception</h3>
-                    <p>5:00 PM - 11:00 PM</p>
-                    <p>TBD</p>
-                </div>
-                <div class="detail-card">
-                    <h3>Accommodations</h3>
-                    <p>TBD</p>
-                    <p>Special room block rate available if Arnav gets his act together.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--
-        <section id="registry" class="registry">
-            <h2>Registry</h2>
-            <div class="registry-links">
-                <a href="#" class="registry-button">Amazon</a>
-                <a href="#" class="registry-button">Crate & Barrel</a>
-                <a href="#" class="registry-button">Target</a>
-            </div>
-        </section>
-        -->
-
-        <section id="rsvp" class="rsvp">
-            <h2>RSVP</h2>
-            <form class="rsvp-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="attending">Will you be attending?</label>
-                    <select id="attending" required>
-                        <option value="">Please select...</option>
-                        <option value="yes">Joyfully Accept</option>
-                        <option value="no">Regretfully Decline</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="guests">Number of Guests</label>
-                    <input type="number" id="guests" min="1" max="4">
-                </div>
-                <button type="submit" class="submit-button">Send RSVP</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <p>&copy; 2024 Lahari &amp; Arnav's Event</p>
-        <p>Website created with ❤️< and 🤖 (Claude AI)</p>
-    </footer>
+    <div class="container">
+        <a href="https://withjoy.com/arnavandlahari/welcome" class="link">Click for Lahari &amp; Arnav's Wedding Website</a>
+        <p class="password">Password: <span class="italic">destinationnj</span></p>
+    </div>
 </body>
 </html>
